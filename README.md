@@ -18,25 +18,23 @@ A small output resistor (R_series ≈ 100–330 Ω) forms a lead network that pl
 - Open the open‑loop/Bode schematic, run AC analysis to get loop gain and phase margin, and export the Bode plot and optional noise density. 
 
 ## Key results (embed 2–4 hero plots)
-- Step — 100 pF: ![100 pF Step](assets/step_100pF.png) with ≈5.43 µs small‑signal settling and minimal overshoot.
+- Step — 100 pF with ≈5.43 µs small‑signal settling and minimal overshoot.
 - <img width="959" height="457" alt="100p_1v_step_ip" src="https://github.com/user-attachments/assets/594cdc2e-e338-49cf-9d4f-88899152fa0f" />
 
-- Step — 10 nF + 220 Ω: ![10 nF Step (R=220 Ω)](assets/step_10nF_Rseries220.png) with ≈5.50 µs and no sustained ringing.
+- Step — 10 nF + 220 Ω: with ≈5.50 µs and no sustained ringing.
   <img width="959" height="454" alt="basic_1vstep_with series r of 220" src="https://github.com/user-attachments/assets/75bf373b-19f0-46e0-aab2-3328ab06ab60" />
 
-- Open‑loop Bode: ![Open‑Loop Bode](assets/bode_openloop.png) showing crossover and phase margin consistent with time‑domain behavior.
+- Open‑loop Bode of both: showing crossover and phase margin consistent with time‑domain behavior.
+- [1] open loop gain of 10nf
+-<img width="959" height="450" alt="openloop" src="https://github.com/user-attachments/assets/f002874a-7603-4649-8649-d730c0990f96" />
+ [2] open loop of 100pf
+<img width="958" height="453" alt="100p_openloop_op" src="https://github.com/user-attachments/assets/8b8d280e-801f-4a33-b3a6-4f4327bc2f18" />
 - 
-- Noise density: ![Noise Density](assets/noise_density.png) in the ~4 nV/√Hz region for the device model and setup used. 
+- Noise density of both: in the ~4 nV/√Hz region for the device model and setup used.
+  [1]- 10nf noise without series R
+- <img width="958" height="453" alt="noise" src="https://github.com/user-attachments/assets/8cc2cd82-b1c3-42c7-a370-d55652a935d7" />
+  [2] - 10nf noise with series R
+<img width="959" height="454" alt="noise_with220r" src="https://github.com/user-attachments/assets/a4e9ee49-8327-49ce-82d7-de4ecdb6c3e8" />
+  [3] - 100pf noise
+  <img width="959" height="452" alt="100p_1v_noise" src="https://github.com/user-attachments/assets/333b47a8-927d-47b8-8eb9-1baa16af3a4d" />
 
-
-
-
-
-
-
-
-## Files in this repo
-- README.md — summary, theory in one paragraph, and hero plots for quick understanding. [2]  
-- docs/results.md — full plot set with deep explanations and “what‑if” guidance. [2][3]  
-- sims/ltspice/*.asc — LTspice schematics for 100 pF, 10 nF + R_series, and open‑loop Bode/noise. [2]  
-- assets/*.png — exported plots used by README and docs/results.md. [2]
