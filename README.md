@@ -21,9 +21,11 @@ A small output resistor (R_series ≈ 100–330 Ω) forms a lead network that pl
 - Step — 100 pF: ![100 pF Step](assets/step_100pF.png) with ≈5.43 µs small‑signal settling and minimal overshoot.
 - <img width="959" height="457" alt="100p_1v_step_ip" src="https://github.com/user-attachments/assets/594cdc2e-e338-49cf-9d4f-88899152fa0f" />
 
- 
-- Step — 10 nF + 220 Ω: ![10 nF Step (R=220 Ω)](assets/step_10nF_Rseries220.png) with ≈5.50 µs and no sustained ringing. 
-- Open‑loop Bode: ![Open‑Loop Bode](assets/bode_openloop.png) showing crossover and phase margin consistent with time‑domain behavior. 
+- Step — 10 nF + 220 Ω: ![10 nF Step (R=220 Ω)](assets/step_10nF_Rseries220.png) with ≈5.50 µs and no sustained ringing.
+  <img width="959" height="454" alt="basic_1vstep_with series r of 220" src="https://github.com/user-attachments/assets/75bf373b-19f0-46e0-aab2-3328ab06ab60" />
+
+- Open‑loop Bode: ![Open‑Loop Bode](assets/bode_openloop.png) showing crossover and phase margin consistent with time‑domain behavior.
+- 
 - Noise density: ![Noise Density](assets/noise_density.png) in the ~4 nV/√Hz region for the device model and setup used. 
 
 
