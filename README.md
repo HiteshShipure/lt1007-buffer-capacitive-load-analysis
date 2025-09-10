@@ -32,6 +32,7 @@ A small output resistor (R_series ≈ 100–330 Ω) forms a lead network that pl
 
   
 - Noise density of both: in the ~4 nV/√Hz region for the device model and setup used.
+
   [1]- 10nf noise without series R
 - <img width="958" height="453" alt="noise" src="https://github.com/user-attachments/assets/8cc2cd82-b1c3-42c7-a370-d55652a935d7" />
   [2] - 10nf noise with series R
